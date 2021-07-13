@@ -18,6 +18,7 @@ header {
   margin: auto;
   align-items: flex-end;
 }
+
 #logo {
   display: flex;
   flex-direction: row;
@@ -263,6 +264,12 @@ section a {
   font-weight: bold;
 }
 
+#activites a {
+  display: inline-block;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
 figure {
   width: 275px;
   height: 175px;
@@ -279,6 +286,7 @@ figure {
 #activites {
   display: flex;
   flex-direction: row;
+  
 }
 
 #activites img {
@@ -297,7 +305,7 @@ article {
 figcaption {
   font-weight: bold;
   padding-left: 10px;
-  margin: 3px;
+  margin: 2px;
 }
 
 .grandeActivité {
@@ -306,6 +314,10 @@ figcaption {
 
 .min-activité {
   height: 200px;
+}
+
+.min-activité h2 {
+  margin: 0;
 }
 
 #Apropos,
@@ -345,6 +357,7 @@ figcaption {
     background-size: contain;
     /* padding-right: 0; */
  }
+
  #hebergements {
   background: none;
   border: none;
