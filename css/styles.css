@@ -1,0 +1,465 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap)
+    format("truetype");
+}
+
+body {
+  font-family: Raleway;
+  padding: 10px;
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 1200px;
+  margin: auto;
+  align-items: flex-end;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 1em;
+  color: black;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.inscription {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: large;
+  color: black;
+}
+
+h2 {
+  font-size: medium;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1px;
+  font-weight: normal;
+}
+
+.filtre {
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+  margin-right: 15px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  border-left: #deebff;
+  align-items: center;
+  justify-content: center;
+}
+
+.filtre:hover {
+    background-color: #e9e7e7;
+    cursor: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.styleMenu a:hover {
+    border-top: 2px #0065fc solid;
+    padding-top: 30px;
+}
+
+.liste {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.liste i {
+  color: #0065fc;
+  border: 2px #deebff;
+  border-radius: 50px;
+  background-color: #deebff;
+  padding: 15px;
+  margin-right: 10px;
+  border-collapse: collapse;
+}
+
+#filtres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  margin: 20px;
+}
+
+input {
+  height: 40px;
+  width: 500px;
+  margin-left: 20px;
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+}
+
+.map {
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#logomap {
+  display: flex;
+  align-self: center;
+  margin-left: 15px;
+}
+
+#logoinfo {
+  color: #0065fc;
+  margin: 10px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  padding: 6px;
+  text-align: center;
+}
+
+button {
+  background-color: #0065fc;
+  color: white;
+  font-size: 15px;
+  border: #0065fc;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-collapse: collapse;
+  cursor: pointer;
+  height: 40px;
+  align-items: center;
+}
+
+.loupe {
+  display: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+#Popularité {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 30%;
+}
+
+#Popularité img {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  object-fit: cover;
+  width: 40%;
+  height: 100%;
+}
+
+.boxPop {
+  background-color: white;
+  border: 4px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px gray;
+  padding: 5px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  min-width: 25vw;
+  height: 10vw;
+}
+
+.legendePop {
+  margin-left: 10px; 
+  display: flex;
+  flex-direction: column;
+}
+.legendePop .stars {
+    display: flex;
+    margin-top: 3vw;
+    
+}
+.iconechart {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#hebergements, #Popularité {
+  border: 3px #f2f2f2 solid;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+#hebergements {
+  width: 67%;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+.boxHeb {
+  box-sizing: content-box;
+  width: 17vw;
+  height: 15vw;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px grey;
+  padding: 4px;
+  margin: 17px;
+}
+
+#min-hebergement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+.boxHeb img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
+}
+
+section a {
+  display: inline-block;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+figure {
+  width: 275px;
+  height: 175px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px grey;
+  padding-bottom: 15px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+#activites {
+  display: flex;
+  flex-direction: row;
+}
+
+#activites img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 93%;
+  width: 100%;
+  object-fit: cover;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+figcaption {
+  font-weight: bold;
+  padding-left: 10px;
+  margin: 3px;
+}
+
+.grandeActivité {
+  height: 450px;
+}
+
+.min-activité {
+  height: 200px;
+}
+
+#Apropos,
+#Qualité,
+#Assitance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 0%;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-device-width:1200px) {
+  body {
+    width: 100%;
+    margin: O;
+    overflow: hidden;
+  }
+
+  header {
+    display : flex;
+    justify-content: flex-start;
+  }
+
+  #Popularité {
+    width: 100%; 
+    float: none;
+    align-content: flex-start;
+    border-radius: 0;
+    background-size: contain;
+    /* padding-right: 0; */
+ }
+ #hebergements {
+  background: none;
+  border: none;
+  width: 100%;
+  margin: 3px;
+}
+
+.boxPop {
+  width: 91%;
+  height: 200px;
+  margin: 5px;
+}  
+
+.boxHeb {
+  width: 91%;
+  height: 300px;
+}
+
+figure {
+   height: 200px;
+   max-width: calc(100%-7px); 
+}   
+
+#activites{
+  width: 92%;
+  flex-flow: column wrap;
+}
+
+#min-hebergement {
+  
+  flex-flow: column wrap; 
+}
+
+.min-activité, .grandeActivité{
+  width: 92%;
+  height: 250px;
+}
+
+
+}
+
+@media screen and (max-device-width: 600px)
+ {
+   
+     body{ 
+        width: auto;
+        max-width: 600px;
+        margin: 0;
+        overflow:hidden;
+    }
+    
+    logo{
+        position: absolute;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column wrap;
+    }
+  
+    .styleMenu {
+      width: 50%;
+      border-bottom: 2px solid #f2f2f2;
+      text-align: center;
+      margin-top: 5px;
+    }
+  
+    .styleMenu a:hover{    
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+    }
+
+    .inscription {
+      position: absolute;
+      align-content: flex-end;
+      right: 80px;
+      top: 30px;
+    }
+    .Rechercher {
+      display: none;
+    }
+    .loupe {
+      display: flex;
+      border-radius: 5px;
+      background-color: #0065fc;
+      color: white;
+      cursor: pointer;
+    }
+    .boxPop {
+      min-width: 25vw;
+      height: 200px;
+      width: 12%;
+      width: 80%;
+    }
+    .legendePop .stars {
+      display: flex;
+      margin-top:27vw;
+    }
+
+    .boxHeb{
+      height: 200px;
+    }
+    #filtres, .liste{
+       flex-flow: row wrap;
+       padding-left: 0;
+      margin:  3px;
+      padding-bottom: 3px;
+    }
+
+    #Footer{
+         width: 100%;
+         padding: 20px;
+         flex-flow: column wrap;
+     } 
+ } 
+ 
