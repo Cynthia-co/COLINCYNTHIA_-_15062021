@@ -79,8 +79,12 @@ p {
 }
 
 .filtre:hover {
-    background-color: #e9e7e7;
-    cursor: auto;
+  background-color: #e9e7e7;
+  cursor: auto;
+}
+
+#filtres h2 {
+  margin-bottom: 18px;
 }
 
 li {
@@ -88,8 +92,8 @@ li {
 }
 
 .styleMenu a:hover {
-    border-top: 2px #0065fc solid;
-    padding-top: 30px;
+  border-top: 2px #0065fc solid;
+  padding-top: 30px;
 }
 
 .liste {
@@ -203,14 +207,13 @@ img {
 }
 
 .legendePop {
-  margin-left: 10px; 
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
 }
 .legendePop .stars {
-    display: flex;
-    margin-top: 3vw;
-    
+  display: flex;
+  margin-top: 3vw;
 }
 .iconechart {
   position: relative;
@@ -219,7 +222,8 @@ img {
   justify-content: space-between;
 }
 
-#hebergements, #Popularité {
+#hebergements,
+#Popularité {
   border: 3px #f2f2f2 solid;
   border-radius: 10px;
   background-color: #f2f2f2;
@@ -286,7 +290,6 @@ figure {
 #activites {
   display: flex;
   flex-direction: row;
-  
 }
 
 #activites img {
@@ -337,7 +340,7 @@ figcaption {
   background-color: #f2f2f2;
 }
 
-@media screen and (max-device-width:1200px) {
+@media screen and (max-device-width: 1200px) {
   body {
     width: 100%;
     margin: O;
@@ -345,134 +348,138 @@ figcaption {
   }
 
   header {
-    display : flex;
+    display: flex;
     justify-content: flex-start;
   }
 
   #Popularité {
-    width: 100%; 
+    width: 100%;
     float: none;
     align-content: flex-start;
     border-radius: 0;
     background-size: contain;
     /* padding-right: 0; */
- }
+  }
 
- #hebergements {
-  background: none;
-  border: none;
-  width: 100%;
-  margin: 3px;
+  #hebergements {
+    background: none;
+    border: none;
+    width: 100%;
+    margin: 3px;
+  }
+
+  .boxPop {
+    width: 91%;
+    height: 200px;
+    margin: 5px;
+  }
+
+  .boxHeb {
+    width: 91%;
+    height: 300px;
+  }
+
+  figure {
+    height: 200px;
+    max-width: calc(100%-7px);
+  }
+
+  #activites {
+    width: 92%;
+    flex-flow: column wrap;
+  }
+
+  #min-hebergement {
+    flex-flow: column wrap;
+  }
+
+  .min-activité,
+  .grandeActivité {
+    width: 92%;
+    height: 250px;
+  }
 }
 
-.boxPop {
-  width: 91%;
-  height: 200px;
-  margin: 5px;
-}  
-
-.boxHeb {
-  width: 91%;
-  height: 300px;
-}
-
-figure {
-   height: 200px;
-   max-width: calc(100%-7px); 
-}   
-
-#activites{
-  width: 92%;
-  flex-flow: column wrap;
-}
-
-#min-hebergement {
-  
-  flex-flow: column wrap; 
-}
-
-.min-activité, .grandeActivité{
-  width: 92%;
-  height: 250px;
-}
-
-
-}
-
-@media screen and (max-device-width: 600px)
- {
-   
-     body{ 
+@media screen and (max-device-width: 600px) {
+  /* body{ 
         width: auto;
         max-width: 600px;
         margin: 0;
         overflow:hidden;
-    }
-    
-    logo{
-        position: absolute;
-        margin: 0;
-    }
+    } */
 
-    header {
-        display: flex;
-        align-items: flex-start;
-        flex-flow: column wrap;
-    }
-  
-    .styleMenu {
-      width: 50%;
-      border-bottom: 2px solid #f2f2f2;
-      text-align: center;
-      margin-top: 5px;
-    }
-  
-    .styleMenu a:hover{    
-        border-top: none;
-        border-bottom: 2px solid #0065fc;
-    }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
 
-    .inscription {
-      position: absolute;
-      align-content: flex-end;
-      right: 80px;
-      top: 30px;
-    }
-    .Rechercher {
-      display: none;
-    }
-    .loupe {
-      display: flex;
-      border-radius: 5px;
-      background-color: #0065fc;
-      color: white;
-      cursor: pointer;
-    }
-    .boxPop {
-      min-width: 25vw;
-      height: 200px;
-      width: 12%;
-      width: 80%;
-    }
-    .legendePop .stars {
-      display: flex;
-      margin-top:27vw;
-    }
+  logo {
+    position: absolute;
+    margin: 0;
+  }
 
-    .boxHeb{
-      height: 200px;
-    }
-    #filtres, .liste{
-       flex-flow: row wrap;
-       padding-left: 0;
-      margin:  3px;
-      padding-bottom: 3px;
-    }
+  header {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
 
-    #Footer{
-         width: 100%;
-         padding: 20px;
-         flex-flow: column wrap;
-     } 
- } 
- 
+  .styleMenu {
+    width: 50%;
+    border-bottom: 2px solid #f2f2f2;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .styleMenu a:hover {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+  }
+
+  .inscription {
+    position: absolute;
+    align-content: flex-end;
+    right: 80px;
+    top: 30px;
+  }
+  .Rechercher {
+    display: none;
+  }
+  .loupe {
+    display: flex;
+    border-radius: 5px;
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+  }
+  .boxPop {
+    min-width: 25vw;
+    height: 200px;
+    width: 12%;
+    width: 80%;
+  }
+  .legendePop .stars {
+    display: flex;
+    margin-top: 27vw;
+  }
+
+  .boxHeb {
+    height: 200px;
+  }
+  #filtres,
+  .liste {
+    flex-flow: row wrap;
+    padding-left: 0;
+    margin: 3px;
+    padding-bottom: 3px;
+  }
+
+  #Footer {
+    width: 100%;
+    padding: 20px;
+    flex-flow: column wrap;
+  }
+}
