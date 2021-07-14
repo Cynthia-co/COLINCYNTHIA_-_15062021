@@ -432,6 +432,7 @@ figcaption {
     width: 50%;
     border-bottom: 2px solid #f2f2f2;
     text-align: center;
+    font-weight: bold;
     margin-top: 5px;
   }
 
@@ -443,7 +444,7 @@ figcaption {
   .inscription {
     position: absolute;
     align-content: flex-end;
-    right: 80px;
+    right: 100px;
     top: 30px;
   }
   .Rechercher {
