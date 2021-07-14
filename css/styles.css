@@ -55,8 +55,8 @@ h2 {
   font-size: medium;
   font-weight: bold;
   color: black;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin: 10px;
+  margin-left: 2px;
 }
 
 p {
@@ -365,11 +365,11 @@ figcaption {
     background: none;
     border: none;
     width: 100%;
-    margin: 3px;
+    /* margin: 3px; */
   }
 
   .boxPop {
-    width: 91%;
+    width: auto;
     height: 200px;
     margin: 5px;
   }
@@ -377,11 +377,15 @@ figcaption {
   .boxHeb {
     width: 91%;
     height: 300px;
+    margin: 2px;
+    margin-bottom: 12px;
   }
 
   figure {
     height: 200px;
     max-width: calc(100%-7px);
+    margin: 2px;
+    margin-bottom: 12px;
   }
 
   #activites {
@@ -391,23 +395,20 @@ figcaption {
 
   #min-hebergement {
     flex-flow: column wrap;
+    margin: 0px;
   }
 
   .min-activité,
   .grandeActivité {
-    width: 92%;
+    width: auto;
     height: 250px;
+    margin: 3px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (max-device-width: 600px) {
-  /* body{ 
-        width: auto;
-        max-width: 600px;
-        margin: 0;
-        overflow:hidden;
-    } */
-
+ 
   html,
   body {
     overflow-x: hidden;
@@ -459,7 +460,8 @@ figcaption {
     min-width: 25vw;
     height: 200px;
     width: 12%;
-    width: 80%;
+    width: auto;
+    margin-top: 15px;
   }
   .legendePop .stars {
     display: flex;
@@ -475,6 +477,15 @@ figcaption {
     padding-left: 0;
     margin: 3px;
     padding-bottom: 3px;
+  }
+  
+  .filtre{
+    padding: -2px;
+    margin: 3px;
+  }
+
+  #hebergements{
+    margin-left: 3px;
   }
 
   #Footer {
