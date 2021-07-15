@@ -104,7 +104,7 @@ li {
 
 .liste i {
   color: #0065fc;
-  border: 2px #deebff;
+  border: 2px;
   border-radius: 50px;
   background-color: #deebff;
   padding: 15px;
@@ -161,7 +161,7 @@ button {
   background-color: #0065fc;
   color: white;
   font-size: 15px;
-  border: #0065fc;
+  border: transparent; 
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-collapse: collapse;
@@ -178,14 +178,14 @@ img {
   object-fit: cover;
 }
 
-#Popularité {
+#Popularite {
   display: flex;
   flex-direction: column;
   float: right;
   width: 30%;
 }
 
-#Popularité img {
+#Popularite img {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   object-fit: cover;
@@ -211,10 +211,12 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .legendePop .stars {
   display: flex;
   margin-top: 3vw;
 }
+
 .iconechart {
   position: relative;
   display: flex;
@@ -223,8 +225,8 @@ img {
 }
 
 #hebergements,
-#Popularité {
-  border: 3px #f2f2f2 solid;
+#Popularite {
+  border: 3px transparent solid;
   border-radius: 10px;
   background-color: #f2f2f2;
 }
@@ -311,20 +313,20 @@ figcaption {
   margin: 2px;
 }
 
-.grandeActivité {
+.grandeActivite {
   height: 450px;
 }
 
-.min-activité {
+.min-activite {
   height: 200px;
 }
 
-.min-activité h2 {
+.min-activite h2 {
   margin: 0;
 }
 
 #Apropos,
-#Qualité,
+#Qualite,
 #Assitance {
   display: flex;
   flex-direction: column;
@@ -340,10 +342,10 @@ figcaption {
   background-color: #f2f2f2;
 }
 
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   body {
     width: 100%;
-    margin: O;
+    margin: 0;
     overflow: hidden;
   }
 
@@ -352,20 +354,20 @@ figcaption {
     justify-content: flex-start;
   }
 
-  #Popularité {
+  #Popularite {
     width: 100%;
     float: none;
     align-content: flex-start;
     border-radius: 0;
     background-size: contain;
-    /* padding-right: 0; */
+    
   }
 
   #hebergements {
     background: none;
     border: none;
     width: 100%;
-    /* margin: 3px; */
+    
   }
 
   .boxPop {
@@ -383,7 +385,7 @@ figcaption {
 
   figure {
     height: 200px;
-    max-width: calc(100%-7px);
+    
     margin: 2px;
     margin-bottom: 12px;
   }
@@ -398,8 +400,8 @@ figcaption {
     margin: 0px;
   }
 
-  .min-activité,
-  .grandeActivité {
+  .min-activite,
+  .grandeActivite {
     width: auto;
     height: 250px;
     margin: 3px;
@@ -407,12 +409,13 @@ figcaption {
   }
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
  
   html,
   body {
     overflow-x: hidden;
   }
+
   body {
     position: relative;
   }
@@ -481,7 +484,7 @@ figcaption {
   }
   
   .filtre{
-    padding: -2px;
+    padding: 0px;
     margin: 3px;
   }
 
