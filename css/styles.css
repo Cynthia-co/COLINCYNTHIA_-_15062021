@@ -1,3 +1,5 @@
+/* @media  screen and (min-width:1200px) and (max-width:1599px) { */
+
 @font-face {
   font-family: "Raleway";
   src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap)
@@ -94,6 +96,7 @@ li {
 .styleMenu a:hover {
   border-top: 2px #0065fc solid;
   padding-top: 30px;
+  padding: 30px;
 }
 
 .liste {
@@ -161,7 +164,7 @@ button {
   background-color: #0065fc;
   color: white;
   font-size: 15px;
-  border: transparent; 
+  border: transparent;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-collapse: collapse;
@@ -182,7 +185,7 @@ img {
   display: flex;
   flex-direction: column;
   float: right;
-  width: 30%;
+  width: 390px;
 }
 
 #Popularite img {
@@ -232,7 +235,7 @@ img {
 }
 
 #hebergements {
-  width: 67%;
+  width: 890px;
   margin-left: 10px;
   padding-bottom: 20px;
 }
@@ -342,11 +345,9 @@ figcaption {
   background-color: #f2f2f2;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   body {
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
+    margin: 30px
   }
 
   header {
@@ -355,69 +356,84 @@ figcaption {
   }
 
   #Popularite {
-    width: 100%;
     float: none;
-    align-content: flex-start;
+    /* align-content: flex-start; */
     border-radius: 0;
-    background-size: contain;
-    
+    /* background-size: contain; */
+   flex-direction: column;
+   
   }
-
+  /* .iconechart{
+    margin-bottom: 10px;
+  } */
   #hebergements {
     background: none;
     border: none;
-    width: 100%;
-    
+    margin-left: 0;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    padding: 5px;
+  }
+  #min-hebergement{
+    margin: 0;
+    margin-top: 10px;
+  }
+ 
+  h2{
+    margin: 0;
   }
 
   .boxPop {
-    width: auto;
-    height: 200px;
+    width: 223px;
+    height: 145px;
     margin: 5px;
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .boxHeb {
-    width: 91%;
-    height: 300px;
+    width: 223px;
+    height: 155px;
     margin: 2px;
     margin-bottom: 12px;
+    margin-left: 0;
+    padding: 2px;
   }
 
   figure {
-    height: 200px;
-    
-    margin: 2px;
+    height: 155px;
+    width: 223px;
+    margin: 5px;
     margin-bottom: 12px;
+    margin-left: 0;
   }
 
-  #activites {
-    width: 92%;
-    flex-flow: column wrap;
+  #min-hebergement, #activites{
+    flex-flow: row wrap;
+    
   }
-
-  #min-hebergement {
-    flex-flow: column wrap;
-    margin: 0px;
-  }
+   #activites article{
+     flex-direction: row;
+   }
 
   .min-activite,
   .grandeActivite {
-    width: auto;
-    height: 250px;
-    margin: 3px;
+    width: 233px;
+    height: 155px;
+    margin: 5px;
     margin-bottom: 12px;
   }
 }
 
-@media screen and (max-width: 600px) {
- 
+@media screen and (max-width: 767px) {
   html,
   body {
-    overflow-x: hidden;
+    margin: 0;
   }
 
   body {
     position: relative;
+    
   }
 
   logo {
@@ -432,7 +448,7 @@ figcaption {
   }
 
   .styleMenu {
-    width: 50%;
+    width: 150px;
     border-bottom: 2px solid #f2f2f2;
     padding-bottom: 5px;
     text-align: center;
@@ -442,13 +458,15 @@ figcaption {
 
   .styleMenu a:hover {
     border-top: none;
+    padding-bottom: 5px;
     border-bottom: 2px solid #0065fc;
+    margin-top: 5px;
   }
 
   .inscription {
     position: absolute;
     align-content: flex-end;
-    right: 100px;
+    right: 2%;
     top: 30px;
   }
   .Rechercher {
@@ -461,21 +479,31 @@ figcaption {
     color: white;
     cursor: pointer;
   }
+
+  #Popularite{
+    max-width: 750px;
+    flex-flow: column wrap;
+  }
   .boxPop {
-    min-width: 25vw;
-    height: 200px;
-    width: 12%;
-    width: auto;
-    margin-top: 15px;
+    width:350px;
+    height: 150px;
+    margin-top: 5px;
   }
   .legendePop .stars {
-    display: flex;
-    margin-top: 27vw;
+    margin-top: 60px;
+  }
+#hebergements {
+  flex-direction: column;
+  max-width: 760px;
+}
+  .boxHeb,
+  .min-activite,
+  .grandeActivite {
+    height: 150px;
+    width: 350px;
+    
   }
 
-  .boxHeb {
-    height: 200px;
-  }
   #filtres,
   .liste {
     flex-flow: row wrap;
@@ -483,20 +511,20 @@ figcaption {
     margin: 3px;
     padding-bottom: 3px;
   }
-  
-  .filtre{
+
+  .filtre {
     padding: 2px;
-    
     margin: 3px;
   }
 
-  #hebergements{
+  #hebergements {
     margin-left: 3px;
   }
 
   #Footer {
     width: 100%;
     padding: 20px;
+    margin-bottom: 10px;
     flex-flow: column wrap;
   }
 }
