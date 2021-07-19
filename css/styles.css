@@ -346,7 +346,7 @@ figcaption {
 }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
   body {
     margin: 30px;
   }
@@ -434,7 +434,7 @@ figcaption {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   html,
   body {
     margin: 0;
