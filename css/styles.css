@@ -499,17 +499,17 @@ figcaption {
   .legendePop .stars {
     margin-top: 60px;
   }
-#hebergements {
+#min-hebergement, #min-popularite, #activites {
   flex-direction: column;
- flex-wrap: wrap;
 }
+
   .boxHeb,
   .min-activite,
   .grandeActivite, .boxPop {
     height: 150px;
     width: 260px;
-    margin-top: 5px;  
-}
+    margin-top: 5px;
+  }
 
   #filtres,
   .liste {
@@ -527,9 +527,10 @@ figcaption {
   #min-hebergement {
     margin-left: 0px;
   }
-article {
+#activites article {
   flex-direction: column;
-
+  flex-wrap: wrap;
+}
   #Footer{
     display: flex;
     flex-direction: column ;
