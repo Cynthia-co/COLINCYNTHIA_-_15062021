@@ -9,8 +9,8 @@ body {
   padding: 10px;
   margin: 10px;
 }
-@media screen and (max-width:1500px) {
-  
+@media screen {
+
 
 header {
   display: flex;
@@ -346,7 +346,44 @@ figcaption {
 }
 }
 
-@media screen and (max-width: 1224px) {
+@media  screen and (max-width:2500px) {
+  #hebergements{
+    width: 66%
+  }
+  #Popularite{
+    width:30%;
+  }
+  #activites figure{
+    width: 80%;
+  }
+  #logo{
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width:1400px){
+  #hebergements{
+    width: 890px;
+  }
+  #Popularite{
+    width: 390px;
+  }
+
+  #activites figure {
+    width: 275px;
+  }
+  
+  figcaption{
+    margin:0px;
+    padding: 0px;
+  }
+
+  .legendePop{
+    margin-left: 3px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
   body {
     margin: 30px;
   }
@@ -408,7 +445,7 @@ figcaption {
 
   figure {
     height: 155px;
-    width: 223px;
+    width: 200px;
     margin: 5px;
     margin-bottom: 12px;
     margin-left: 0;
@@ -432,9 +469,34 @@ figcaption {
     margin: 5px;
     margin-bottom: 12px;
   }
+
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+  #Popularite{
+    width: 80%;
+    flex-flow: column wrap;
+    height: auto;
+  }
+
+  #Popularite article{
+    max-width: 400px;
+  }
+
+  #hebergements{
+    width: 90%;
+  }
+  
+  #activites{
+    width: 90%;
+  }
+  #activites figure{
+    width:220px;
+    flex-flow: row wrap; 
+  }
+}
+
+@media screen and (max-width: 700px) {
   html,
   body {
     margin: 0;
