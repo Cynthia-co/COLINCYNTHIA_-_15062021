@@ -15,9 +15,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  width: 1200px;
-  margin: auto;
+  flex-direction: row;  
   align-items: flex-end;
 }
 
@@ -185,7 +183,7 @@ img {
   display: flex;
   flex-direction: column;
   float: right;
-  width: 390px;
+  width: 30%;
 }
 
 #Popularite img {
@@ -205,7 +203,7 @@ img {
   margin: 20px;
   display: flex;
   flex-direction: row;
-  min-width: 25vw;
+  min-width: 21vw;
   height: 10vw;
 }
 
@@ -235,14 +233,14 @@ img {
 }
 
 #hebergements {
-  width: 890px;
+  width: 67%;
   margin-left: 10px;
   padding-bottom: 20px;
 }
 
 .boxHeb {
   box-sizing: content-box;
-  width: 17vw;
+  width: 14vw;
   height: 15vw;
   background-color: white;
   border-radius: 20px;
@@ -295,6 +293,7 @@ figure {
 #activites {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #activites img {
@@ -346,12 +345,22 @@ figcaption {
 }
 }
 
-@media  screen and (max-width:2500px) {
+/* @media screen and (max-width:2500) {
+  margin-right: 50px;
+  margin-left: 50px;
+} */
+
+@media  screen and (max-width:1600px) {
+
+
   #hebergements{
     width: 66%
   }
   #Popularite{
     width:30%;
+  }
+  #activites{
+    flex-wrap: nowrap;
   }
   #activites figure{
     width: 80%;
@@ -380,6 +389,9 @@ figcaption {
   .legendePop{
     margin-left: 3px;
   }
+  .grandeActivite{
+    height: 275px;
+  }
 }
 
 
@@ -390,7 +402,7 @@ figcaption {
 
   header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   #Popularite {
@@ -403,8 +415,9 @@ figcaption {
   }
   #min-popularite {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     margin: 5px;
+    justify-content: space-evenly;
   }
   #hebergements {
     background: none;
@@ -452,10 +465,17 @@ figcaption {
     flex-flow: row wrap;
   }
 
-  #min-hebergement,
-  #activites,
-  #min-popularite {
+  #min-hebergement
+  {
     flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  #activites{
+    flex-flow: row wrap;
+  }
+  #min-popularite{
+    
   }
 
   #activites article {
@@ -474,13 +494,9 @@ figcaption {
 
 @media screen and (max-width: 900px) {
   #Popularite{
-    width: 80%;
+    width: 100%;
     flex-flow: column wrap;
     height: auto;
-  }
-
-  #Popularite article{
-    max-width: 400px;
   }
 
   #hebergements{
@@ -490,13 +506,17 @@ figcaption {
   #activites{
     width: 90%;
   }
+  article{
+    display: flex;
+    flex-direction: column;
+  }
   #activites figure{
-    width:220px;
+    width:100%;
     flex-flow: row wrap; 
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
   html,
   body {
     margin: 0;
@@ -559,7 +579,7 @@ figcaption {
   #min-popularite {
     flex-direction: column;
     justify-items: flex-start;
-    width: 200px;
+    width: 98%;
   }
 
   .legendePop .stars {
@@ -567,16 +587,19 @@ figcaption {
   }
   #min-hebergement,
   #min-popularite,
-  #activites {
+  #activites, article {
     flex-direction: column;
   }
 
-  .boxHeb,
+  .boxHeb{
+    width: 100%;
+    height: 236px;
+  }
   .min-activite,
   .grandeActivite,
   .boxPop {
     height: 150px;
-    width: 260px;
+    /* width: 260px; */
     margin-top: 5px;
   }
 
@@ -600,8 +623,30 @@ figcaption {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  #activites figure{
+    width: 100%;
+    height: 236px;
+  }
+  #Popularite article{
+    width: 90%;
+  }
+  .boxPop{
+    width: 100%;
+  }
   #Footer {
     display: flex;
     flex-direction: column;
   }
+}
+
+@media screen and (min-width: 1700px) {
+  body{
+    margin-left:10% ;
+    margin-right: 10%;
+  }
+  #activites{
+    justify-content: space-around;
+    align-items: center;
+  }
+
 }
