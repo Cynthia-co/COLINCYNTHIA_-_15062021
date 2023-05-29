@@ -302,7 +302,9 @@ figure {
   width: 100%;
   object-fit: cover;
 }
-
+/* .activites-line{
+  display: flex;
+} */
 article {
   display: flex;
   flex-direction: column;
@@ -342,6 +344,13 @@ figcaption {
   padding: 20px;
   background-color: #f2f2f2;
 }
+.acti-tablet{
+  display: flex;
+  
+}
+.activites-line{
+  display: flex;
+}
 }
 
 /* @media screen and (max-width:2500) {
@@ -365,6 +374,13 @@ figcaption {
   #logo{
     align-items: flex-start;
   }
+  .acti-tablet{
+    display: flex;
+    
+  }
+  .activites-line{
+    display: flex;
+  }
 }
 @media screen and (max-width:1400px){
   #hebergements{
@@ -375,7 +391,8 @@ figcaption {
   }
 
   #activites figure {
-    width: 275px;
+    width: 347px;
+    /* height: 200px; */
   }
   
   figcaption{
@@ -388,6 +405,13 @@ figcaption {
   }
   .grandeActivite{
     height: 465px;
+  }
+  .acti-tablet{
+    display: flex;
+    flex-direction: row;
+  }
+  .activites-line{
+    display: flex;
   }
 }
 
@@ -483,6 +507,13 @@ figcaption {
     margin: 5px;
     margin-bottom: 12px;
   }
+  .acti-tablet{
+    display: flex;
+    flex-direction: column;
+  }
+  .activites-line{
+    display: flex;
+  }
 
 }
 
@@ -514,11 +545,18 @@ figcaption {
     display: inline-block;
   }
   #activites figure{
-    width:100%;
+    width:300px;
     flex-flow: row wrap; 
   }
   .grandeActivite{
     width: 70%;
+  }
+  .activite-line{
+    display: flex;
+  }
+  .acti-tablet{
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -648,6 +686,10 @@ figcaption {
     display: flex;
     flex-direction: column;
   }
+  .activites-line {
+    display: flex;
+    flex-direction: column;
+}
 }
 
 @media screen and (min-width: 1700px) {
@@ -672,4 +714,8 @@ figcaption {
  .legendePop .stars{
   margin-top: 15%;
  }
+ .activites-line {
+  display: flex;
+  flex-direction: column;
+}
 }
