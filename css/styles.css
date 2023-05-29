@@ -11,7 +11,6 @@ body {
 }
 @media screen {
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -472,9 +471,6 @@ figcaption {
   #activites{
     flex-flow: row wrap;
   }
-  #min-popularite{
-    
-  }
 
   #activites article {
     flex-flow: row wrap;
@@ -492,20 +488,24 @@ figcaption {
 
 @media screen and (max-width: 900px) {
   #Popularite{
-    width: 100%;
+    width: 107%;
     flex-flow: column wrap;
     height: auto;
   }
 
   #hebergements{
-    width: 90%;
+    width: 100%;
   }
-  
+  .boxHeb{
+    width: 300px;
+    height: 200px;
+  }
   #activites{
     width: 90%;
     flex-direction: row;
     justify-content: center;
   }
+ 
   article{
     display: flex;
     flex-direction: column;
@@ -516,6 +516,9 @@ figcaption {
   #activites figure{
     width:100%;
     flex-flow: row wrap; 
+  }
+  .grandeActivite{
+    width: 70%;
   }
 }
 
@@ -659,7 +662,7 @@ figcaption {
 
 }
 
-@media screen and (max-width: (500px) {
+@media screen and (max-width: 500px) {
   .styleMenu{
     width: 50%;
   }
