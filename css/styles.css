@@ -370,7 +370,9 @@ figcaption {
   #activites{
     flex-wrap: nowrap;
   }
- 
+ #activites figure{
+  width: 312px;
+ }
   #logo{
     align-items: flex-start;
   }
@@ -380,6 +382,9 @@ figcaption {
   }
   .activites-line{
     display: flex;
+  }
+  .boxPop{
+    width: 94%;
   }
 }
 @media screen and (max-width:1400px){
@@ -391,7 +396,7 @@ figcaption {
   }
 
   #activites figure {
-    width: 347px;
+    width: 291px;
     /* height: 200px; */
   }
   
@@ -399,7 +404,9 @@ figcaption {
     margin:0px;
     padding: 0px;
   }
-
+  .boxPop{
+    width: 94%;
+  }
   .legendePop{
     margin-left: 3px;
   }
@@ -645,6 +652,7 @@ figcaption {
   .grandeActivite,
   .boxPop {
     height: 150px;
+    width: 94%;
     /* width: 260px; */
     margin-top: 5px;
   }
@@ -677,7 +685,7 @@ figcaption {
     width: 90%;
   }
   .boxPop{
-    width: 100%;
+    width: 94%;
   }
   #Popularite img{
     width: 72%;
@@ -692,14 +700,17 @@ figcaption {
 }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1670px) {
   body{
     margin-left:10% ;
     margin-right: 10%;
   }
   #activites{
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+  }
+  .boxPop{
+    width: 85%;
   }
 
 }
