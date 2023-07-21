@@ -239,7 +239,7 @@ img {
 
 .boxHeb {
   box-sizing: content-box;
-  width: 14vw;
+  width: 16vw;
   height: 15vw;
   background-color: white;
   border-radius: 20px;
@@ -265,7 +265,7 @@ img {
 }
 
 section a {
-  display: inline-block;
+  /* display: inline-block; */
   align-items: flex-start;
   font-weight: bold;
 }
@@ -277,7 +277,7 @@ section a {
 }
 
 figure {
-  width: 275px;
+  width: 367px;
   height: 175px;
   background-color: white;
   border-radius: 20px;
@@ -317,11 +317,11 @@ figcaption {
 }
 
 .grandeActivite {
-  height: 450px;
+  height: 629px;
 }
 
 .min-activite {
-  height: 200px;
+  height: 284px;
 }
 
 .min-activite h2 {
@@ -370,8 +370,14 @@ figcaption {
   #activites{
     flex-wrap: nowrap;
   }
- #activites figure{
-  width: 312px;
+ .grandeActivite{
+  width: 82%;
+ }
+ .min-activite{
+  width: 91%;
+ }
+ .article-activite{
+  width: 361px;
  }
   #logo{
     align-items: flex-start;
@@ -384,7 +390,12 @@ figcaption {
     display: flex;
   }
   .boxPop{
-    width: 94%;
+    width: 88%;
+  }
+}
+@media screen and (max-width:1700px){
+  figure{
+    width: 302px;
   }
 }
 @media screen and (max-width:1400px){
@@ -413,6 +424,9 @@ figcaption {
   .grandeActivite{
     height: 465px;
   }
+  .min-activite{
+    height: 200px;
+  }
   .acti-tablet{
     display: flex;
     flex-direction: row;
@@ -439,7 +453,7 @@ figcaption {
     margin-top: 8px;
     flex-flow: column wrap;
     height: 218px;
-    width: 990px;
+    width: 98%;
   }
   #min-popularite {
     display: flex;
@@ -506,11 +520,15 @@ figcaption {
   #activites article {
     flex-flow: row wrap;
   }
+ .article-activite{
+  display: flex;
+  width: 455px;
+ }
 
   .min-activite,
   .grandeActivite {
-    width: 233px;
-    height: 155px;
+    width: 420px;
+    height: 269px;
     margin: 5px;
     margin-bottom: 12px;
   }
@@ -520,6 +538,7 @@ figcaption {
   }
   .activites-line{
     display: flex;
+    flex-direction: column;
   }
 
 }
@@ -551,15 +570,20 @@ figcaption {
   #activites article{
     display: inline-block;
   }
+  .article-activite{
+    width: 340px;
+  }
   #activites figure{
-    width:300px;
+    width: 674px;
     flex-flow: row wrap; 
   }
   .grandeActivite{
-    width: 70%;
+    width: 674px;
+   
   }
   .activite-line{
     display: flex;
+    flex-direction: column;
   }
   .acti-tablet{
     display: flex;
@@ -571,6 +595,7 @@ figcaption {
   html,
   body {
     margin: 0;
+    width: 120%;
   }
 
   body {
@@ -623,8 +648,8 @@ figcaption {
   }
 
   #Popularite {
-    width: 90%;
-    height: 550px;
+    width: 139%;
+    height: fit-content;
     flex-direction: column;
   }
   #min-popularite {
@@ -643,16 +668,15 @@ figcaption {
     justify-content: center;
   }
   
-
   .boxHeb{
-    width: 100%;
-    height: 236px;
+    width: 97%;
+    height: 296px;
   }
   .min-activite,
   .grandeActivite,
   .boxPop {
-    height: 150px;
-    width: 94%;
+    height: 302px;
+ 
     /* width: 260px; */
     margin-top: 5px;
   }
@@ -678,11 +702,11 @@ figcaption {
     flex-wrap: wrap;
   }
   #activites figure{
-    width: 100%;
-    height: 236px;
+    
+    height: 270px;
   }
   #Popularite article{
-    width: 90%;
+    width: 98%;
   }
   .boxPop{
     width: 94%;
@@ -714,13 +738,24 @@ figcaption {
   }
 
 }
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
+  header{
+    width: 100%;
+  }
+  #Menu{
+    width: 97%;
+  }
   .styleMenu{
     width: 50%;
   }
+  .boxHeb, .boxPop{
+    width: 80%;
+  }
  #Popularite img{
-  width: 56%;
+  width: 70%;
+ }
+ #min-popularite{
+  width: 80%;
  }
  .legendePop .stars{
   margin-top: 15%;
@@ -728,5 +763,35 @@ figcaption {
  .activites-line {
   display: flex;
   flex-direction: column;
+}
+footer{
+  width: 100%;
+}
+}
+@media screen and (max-width: 400px) {
+  header{
+    width: 140%;
+  }
+  #Menu{
+    width: 97%;
+  }
+  .styleMenu{
+    width: 50%;
+  }
+  .boxHeb{
+    width: 140%;
+  }
+ #Popularite img{
+  width: 70%;
+ }
+ .legendePop .stars{
+  margin-top: 15%;
+ }
+ .activites-line {
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  width: 140%;
 }
 }
