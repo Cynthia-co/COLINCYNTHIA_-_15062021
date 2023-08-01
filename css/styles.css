@@ -516,7 +516,10 @@ figcaption {
   #activites{
     flex-flow: row wrap;
   }
-
+.acti-tablet{
+  display: flex;
+  flex-flow: row nowrap;
+}
   #activites article {
     flex-flow: row wrap;
   }
@@ -532,10 +535,13 @@ figcaption {
     margin: 5px;
     margin-bottom: 12px;
   }
-  .acti-tablet{
-    display: flex;
-    flex-direction: column;
-  }
+ .grandeActivite{
+  height: 560px;
+ } 
+ #activites article{
+  display: flex;
+  flex-flow: column wrap;
+ }
   .activites-line{
     display: flex;
     flex-direction: column;
@@ -655,7 +661,7 @@ figcaption {
   #min-popularite {
     flex-direction: column;
     justify-items: flex-start;
-    width: 98%;
+    /* width: 98%; */
   }
 
   .legendePop .stars {
@@ -669,7 +675,10 @@ figcaption {
   }
   
   .boxHeb{
+    /* width: 97%; */
     width: 97%;
+    display: flex;
+    margin-left: 21%;
     height: 296px;
   }
   .min-activite,
@@ -697,26 +706,34 @@ figcaption {
   #min-hebergement {
     margin-left: 0px;
   }
+  .acti-tablet{
+    margin-left: 23%;
+  }
   #activites article {
     flex-direction: column;
     flex-wrap: wrap;
   }
   #activites figure{
-    
-    height: 270px;
+    width: 986px;
+    height: 316px;
   }
   #Popularite article{
-    width: 98%;
+    /* width: 98%; */
+    width: 70%;
+    display: flex;
+    margin-left: 15%;
+    justify-content: flex-start;
   }
-  .boxPop{
+  /* .boxPop{
     width: 94%;
   }
   #Popularite img{
-    width: 72%;
-  }
+    width: 72%;s
+  } */
   #Footer {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .activites-line {
     display: flex;
@@ -729,6 +746,12 @@ figcaption {
     margin-left:10% ;
     margin-right: 10%;
   }
+  /* .boxHeb{
+    width: 14vw;
+  }
+  figure{
+    width: 308px;
+  } */
   #activites{
     justify-content: center;
     align-items: center;
@@ -768,7 +791,7 @@ footer{
   width: 100%;
 }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   header{
     width: 140%;
   }
@@ -786,6 +809,9 @@ footer{
  }
  .legendePop .stars{
   margin-top: 15%;
+ }
+ .acti-tablet, .boxPop, .boxHeb{
+  margin-left: 0;
  }
  .activites-line {
   display: flex;
