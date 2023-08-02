@@ -239,7 +239,7 @@ img {
 
 .boxHeb {
   box-sizing: content-box;
-  width: 15vw;
+  width: 14vw;
   height: 15vw;
   background-color: white;
   border-radius: 20px;
@@ -549,7 +549,9 @@ figcaption {
 
 }
 
-@media screen and (max-width: 900px) {
+
+
+@media screen and (max-width: 980px) {
   #Popularite{
     width: 107%;
     flex-flow: column wrap;
@@ -576,24 +578,26 @@ figcaption {
   #activites article{
     display: inline-block;
   }
-  .article-activite{
+  /* .article-activite{
     width: 340px;
-  }
+  } */
   #activites figure{
-    width: 674px;
+    /* width: 674px; */
     flex-flow: row wrap; 
   }
-  .grandeActivite{
-    width: 674px;
-   
-  }
+ .grandeActivite{
+    margin-left: 36%;
+ }
+ .min-activite{
+  margin-left: 13%;
+ }
   .activite-line{
     display: flex;
     flex-direction: column;
   }
   .acti-tablet{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -714,7 +718,7 @@ figcaption {
     flex-wrap: wrap;
   }
   #activites figure{
-    width: 986px;
+    width: 824px;
     height: 316px;
   }
   #Popularite article{
@@ -723,6 +727,9 @@ figcaption {
     display: flex;
     margin-left: 15%;
     justify-content: flex-start;
+  }
+  .grandeActivite{
+    margin-left: 0;
   }
   /* .boxPop{
     width: 94%;
@@ -820,4 +827,43 @@ footer{
 footer{
   width: 140%;
 }
+}
+
+@media (min-width: 980px) and (max-width: 1200px) {
+  .boxPop{
+    width: 277px;
+    height: 156px;
+  }
+  .boxHeb{
+    width: 282px;
+    height: 255px;
+  }
+  .grandeActivite{
+  height: 250px;
+  }
+  #activites article{
+    flex-flow: row nowrap;
+  }
+  .acti-tablet {
+    flex-flow: row nowrap;
+  }
+  a{
+    width: 295px;
+  }
+  .min-activite{
+    width: 350px;
+  }
+  .double-article{
+    width: 600px;
+    margin-left: 22px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 979px) {
+  .grandeActivite{
+    margin-left: 152px;
+  }
+  .acti-tablet{
+    flex-direction: row;
+  }
 }
